@@ -1,4 +1,4 @@
-#include "chooks.h"
+#include "chooks/dynamic.h"
 
 int register_main_hook(hook_info_t *info, main_hook_t hook)
 {
