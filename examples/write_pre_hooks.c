@@ -12,6 +12,6 @@ void write_pre_hook(void **args)
 }
 
 __attribute__((constructor))
-void init_write_hooks(void) {
+void static init_write_hooks(void) {
   REGISTER_PRE_HOOK(write, write_pre_hook);
 }

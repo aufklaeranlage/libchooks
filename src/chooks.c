@@ -1,5 +1,16 @@
 #include "chooks.h"
 
+int register_main_hook(hook_info_t *info, main_hook_t hook)
+{
+  if (info->main == NULL) {
+    info->main = hook;
+  } else {
+    fprintf(stderr, "[libchooks] Main-Hook already set for %s\n", info->func_name);
+    return 0;
+  }
+  return 1;
+}
+
 int register_pre_hook(hook_info_t *info, pre_hook_t hook)
 {
   if (info->pre_count < MAX_HOOKS) {
