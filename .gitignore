@@ -1,3 +1,4 @@
 *compile_flags.txt
 *.so
 *.out
+*compile_flags.txt
