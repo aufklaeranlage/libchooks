@@ -1,4 +1,4 @@
-#include "chooks/dynamic.h"
+#include "chooks.h"
 #include <unistd.h>
 #include <stdio.h>
 

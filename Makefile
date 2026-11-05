@@ -1,6 +1,6 @@
 NAME := libchooks.so
 
-LCH_SRCS := src/dynamic.c
+LCH_SRCS := src/chooks.c
 
 ifeq ($(SRCS),)
 	$(error SRCS not set)
